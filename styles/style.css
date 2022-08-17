@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    background-color: hsl(27, 66%, 92%);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 40px 0;
+    color: hsl(25, 47%, 15%);
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+
+.attribution{
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    font-size: 1rem;
+    color: black;
+}
+
+
+
+/*  Upper Section  */
+
+
+.upper-section{
+    position: absolute;
+    width: 23rem;
+    height: 6.3rem;
+    left: 41.7%;
+    top: 25%;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 14px;
+}
+
+.upper-header{
+    position: relative;
+    left: 26px;
+    top: 18px;
+    display: block;
+    color: aliceblue;
+    font-weight: 400;
+    font-size: 0.85rem;
+}
+
+.upper-money{
+    position: relative;
+    left: 26px;
+    top: 22px;
+    display: block;
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.logo{
+    position: absolute;
+    right: 5%;
+    top: 28px;
+    scale: 0.8;
+}
+
+
+/*  Lower Section  */
+
+
+.lower-section{
+    position: absolute;
+    width: 23rem;
+    height: 22rem;
+    left: 41.7%;
+    top: 37%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.lower-header{
+    position: relative;
+    left: 26px;
+    top: 14px;
+    color: hsl(25, 47%, 15%);
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.graph{
+    position: relative;
+    width: 88%;
+    height: 40%;
+    top: 17%;
+    left: 6%;
+    background-color: white;
+    border-bottom: solid 3.5px hsl(27, 66%, 92%);
+    display: flex;
+    justify-content: stretch;
+    align-items: flex-end;
+}
+
+.graph-item{
+    position: relative;
+    cursor: pointer;
+    width: 40px;
+    border-radius: 5px;
+    background-color: hsl(10, 79%, 65%);
+    margin: 0px 6px;
+    bottom: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.graph-item:hover{
+    background-color: hsl(10, 79%, 80%);
+}
+
+.graph-item::before{
+    content: "";
+    position: absolute;
+    top: -35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 28px;
+    border-radius: 5px;
+    background-color: hsl(25, 47%, 15%);
+    opacity: 0;
+    color: hsl(27, 66%, 92%);
+    font-weight: 700;
+    font-size: 0.75rem;
+}
+
+.graph-item:hover::before{
+    opacity: 1;
+}
+
+
+.active{
+    background-color: hsl(186, 34%, 60%);
+    cursor: pointer;
+}
+
+.active:hover{
+    background-color: hsl(186, 34%, 75%);
+}
+
+.week-day{
+    position: absolute;
+    bottom: -27px;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: hsl(28, 10%, 53%);
+}
+
+
+.mon{
+    height: 34px;
+}
+
+.mon::before{
+    content: "$17.45";
+}
+
+.tue{
+    height: 68px;
+}
+
+.tue::before{
+    content: "$34.91";
+}
+
+.wed{
+    height: 104px;
+}
+
+.wed::before{
+    content: "$52.36";
+}
+
+.thu{
+    height: 62px;
+}
+
+.thu::before{
+    content: "$31.07";
+}
+
+.fri{
+    height: 46px;
+}
+
+.fri::before{
+    content: "$23.39";
+}
+
+.sat{
+    height: 86px;
+}
+
+.sat::before{
+    content: "$43.28";
+}
+
+.sun{
+    height: 50px;
+}
+
+.sun::before{
+    content: "$25.48";
+}
+
+
+/*  Udner Graph  */
+
+
+
+.under-graph{
+    position: absolute;
+    width: 100%;
+    height: 27%;
+    bottom: 0%;
+
+}
+
+.this-month{
+    position: relative;
+    top: 15px;
+    left: 24px;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: hsl(28, 10%, 53%);
+}
+
+.under-graph-money{
+    position: relative;
+    top: 15px;
+    left: 24px;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.percentage{
+    position: relative;
+    top: -30px;
+    left: 290px;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.last-month{
+    position: relative;
+    top: -36px;
+    left: 220px;
+    font-weight: 400;
+    font-size: 1rem;
+    color: hsl(28, 10%, 53%);
+}
